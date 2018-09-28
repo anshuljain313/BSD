@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Region Admin" max_length="40" name="x_14308_bsd_busi_region_admin" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Functional Category" max_length="32" name="u_functional_category" reference="x_14308_bsd_busi_functional_values" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Region" max_length="32" name="u_region" reference="x_14308_bsd_busi_region" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Regional Group" max_length="32" name="u_regional_group" reference="sys_user_group" type="reference"/>
+        <index name="index">
+            <element name="u_functional_category"/>
+        </index>
+        <index name="index2">
+            <element name="u_regional_group"/>
+        </index>
+        <index name="index3">
+            <element name="u_region"/>
+        </index>
+    </element>
+</database>

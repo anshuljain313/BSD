@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_current_assignee_group" table="x_14308_bsd_busi_bsd_business_support_desk_table" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_current_assignee_group</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Functional Admin</label>
+            <language>en</language>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <sequence>10</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-18 13:26:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a66bf26e0f430300beb385ace1050e0e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-18 13:26:03</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_current_assignee_group</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Functional Specialist</label>
+            <language>en</language>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <sequence>20</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-18 13:26:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a77b326e0f430300beb385ace1050ec4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-18 13:26:17</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_current_assignee_group</element>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-18 13:26:03</sys_created_on>
+            <sys_id>38171546dbb02300a890880948961989</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_current_assignee_group</sys_name>
+            <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+            <sys_update_name>sys_choice_x_14308_bsd_busi_bsd_business_support_desk_table_u_current_assignee_group</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-18 13:26:03</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

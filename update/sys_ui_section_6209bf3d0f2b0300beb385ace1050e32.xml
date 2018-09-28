@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Administrator Redirection" section_id="6209bf3d0f2b0300beb385ace1050e32" sys_domain="global" table="x_14308_bsd_busi_bsd_business_support_desk_table" version="3" view="default">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>41dabf7d0f2b0300beb385ace1050eef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <text>Categorisation:</text>
+            <type display_value="Line Separator">a93fc8e00f530000b12e6903cfe012e6</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>45dabf7d0f2b0300beb385ace1050eef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <text>Passed to 3rd Party:</text>
+            <type display_value="Line Separator">a93fc8e00f530000b12e6903cfe012e6</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>41dabf7d0f2b0300beb385ace1050eef</element>
+            <position>0</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>09dabf7d0f2b0300beb385ace1050eef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_process_category</element>
+            <position>1</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>89dabf7d0f2b0300beb385ace1050eef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_process_subcategory</element>
+            <position>2</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>0ddabf7d0f2b0300beb385ace1050eef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_process_activity</element>
+            <position>3</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>8ddabf7d0f2b0300beb385ace1050eef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_process_values</element>
+            <position>4</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>01dabf7d0f2b0300beb385ace1050ef0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_process_specialist</element>
+            <position>5</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>81dabf7d0f2b0300beb385ace1050ef0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>45dabf7d0f2b0300beb385ace1050eef</element>
+            <position>6</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>05dabf7d0f2b0300beb385ace1050ef0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>7</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>85dabf7d0f2b0300beb385ace1050ef0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_type</element>
+            <position>8</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>09dabf7d0f2b0300beb385ace1050ef0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_business_service</element>
+            <position>9</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>89dabf7d0f2b0300beb385ace1050ef0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_ics_call_reference</element>
+            <position>10</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>0ddabf7d0f2b0300beb385ace1050ef0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>11</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>8ddabf7d0f2b0300beb385ace1050ef0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vendor</element>
+            <position>12</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>01dabf7d0f2b0300beb385ace1050ef1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vendor_reference_number</element>
+            <position>13</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>81dabf7d0f2b0300beb385ace1050ef1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_previous_ics_call_reference</element>
+            <position>14</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>05dabf7d0f2b0300beb385ace1050ef1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_previous_vendor_reference_number</element>
+            <position>15</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>85dabf7d0f2b0300beb385ace1050ef1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>16</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:38:51</sys_created_on>
+            <sys_id>09dabf7d0f2b0300beb385ace1050ef1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Administrator Redirection" display_value="Administrator Redirection" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">6209bf3d0f2b0300beb385ace1050e32</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:38:51</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Administrator Redirection</caption>
+            <header>false</header>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:31:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6209bf3d0f2b0300beb385ace1050e32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Administrator Redirection</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+            <sys_update_name>sys_ui_section_6209bf3d0f2b0300beb385ace1050e32</sys_update_name>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:31:03</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default" name="default">30174876cb811200aa871831794c9cc4</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

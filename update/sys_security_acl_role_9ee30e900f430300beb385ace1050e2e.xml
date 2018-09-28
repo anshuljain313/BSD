@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-12-11 09:37:01</sys_created_on>
+        <sys_id>9ee30e900f430300beb385ace1050e2e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_14308_bsd_busi_bsd_business_support_desk_table.bsd_admin</sys_name>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_security_acl display_value="x_14308_bsd_busi_bsd_business_support_desk_table">9ae30e900f430300beb385ace1050e2c</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_9ee30e900f430300beb385ace1050e2e</sys_update_name>
+        <sys_updated_by>anshuljain</sys_updated_by>
+        <sys_updated_on>2018-01-10 07:06:03</sys_updated_on>
+        <sys_user_role display_value="">7dd30e45db30aa00e8acb04ffe9619e4</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

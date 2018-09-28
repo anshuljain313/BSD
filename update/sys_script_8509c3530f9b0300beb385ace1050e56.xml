@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_14308_bsd_busi_bsd_business_support_desk_table</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>BSD - Pass to 3rd party type</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	
+if(current.u_type == '3rd Party Vendors'  && (current.u_passed_call_vendor == 1 ) && current.u_passed_call_count == '0' && current.u_flag11 == false){
+	
+	
+	current.u_previous_vendor_reference_number = current.u_vendor_reference_number;
+	gs.log("inside false flag" +current.u_previous_vendor_reference_number );
+	//current.u_vendor_reference_number = '';
+	current.update();
+}
+
+	if(current.u_type == '3rd Party Vendors'  && (current.u_passed_call_vendor == 2 ) && current.u_passed_call_count == '0' && current.u_flag11 == true  ){
+	
+		
+	current.u_previous_vendor_reference_number = previous.u_vendor_reference_number;
+		gs.log("inside true flag" +current.u_previous_vendor_reference_number );
+//	current.u_vendor_reference_number = '';
+	
+	current.update();
+}
+	//working  - end
+	
+
+	
+	if(current.u_type == '3rd Party Vendors'  && current.u_passed_call_vendor == 0 && current.u_passed_call_count == '1'){
+
+	current.u_previous_vendor_reference_number = current.u_ics_call_reference.getDisplayValue();
+	current.update();
+	}
+		
+		if(current.u_type == 'Incident'  &&current.u_passed_call_vendor == 0 && current.u_passed_call_count == '0' )
+		{
+			
+			 var ven = new GlideRecord('core_company');
+			ven.addQuery('sys_id' , '64f8c34cdbca2a005afdbc2ffe9619d9');
+			ven.query();
+			while(ven.next()){
+				current.u_vendor = ven.getDisplayValue();
+			current.update();	
+			}
+		}
+		
+		
+/*			if(current.u_type == 'Incident'  && current.u_passed_call_vendor == 0 && current.u_passed_call_count == '1' )
+		{
+gs.log("inside typ inc");
+			
+			 var ven1 = new GlideRecord('core_company');
+			ven1.addQuery('sys_id' , '64f8c34cdbca2a005afdbc2ffe9619d9');
+			ven1.query();
+			while(ven1.next()){
+				gs.log("inside while ven1" + ven1.getDisplayValue());
+				current.u_vendor = ven1.getDisplayValue();	
+			}
+			current.update();
+			
+		}*/
+		
+		
+			if(current.u_type == 'Incident'  && current.u_passed_call_vendor == 0 && current.u_passed_call_count == '2' )
+		{
+gs.log("inside typ inc");
+			
+			 var ven2 = new GlideRecord('core_company');
+			ven2.addQuery('sys_id' , '64f8c34cdbca2a005afdbc2ffe9619d9');
+			ven2.query();
+			while(ven2.next()){
+				gs.log("inside while ven1" + ven2.getDisplayValue());
+				current.u_vendor = ven2.getDisplayValue();	
+			}
+			current.u_previous_ics_call_reference = previous.u_ics_call_reference.getDisplayValue();
+			current.update();
+			
+		}
+	
+
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-02 08:39:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8509c3530f9b0300beb385ace1050e56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BSD - Pass to 3rd party type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_update_name>sys_script_8509c3530f9b0300beb385ace1050e56</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-02 08:39:01</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=8509c3530f9b0300beb385ace1050e56"/>
+</record_update>

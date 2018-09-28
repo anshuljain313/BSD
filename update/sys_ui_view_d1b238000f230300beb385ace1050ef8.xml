@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sys_popup,BSD_AllCalls</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>anshuljain</sys_created_by>
+        <sys_created_on>2018-01-04 05:35:09</sys_created_on>
+        <sys_id>d1b238000f230300beb385ace1050ef8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sys_popup,bsd_allcalls</sys_name>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_update_name>sys_ui_view_d1b238000f230300beb385ace1050ef8</sys_update_name>
+        <sys_updated_by>anshuljain</sys_updated_by>
+        <sys_updated_on>2018-01-04 05:35:09</sys_updated_on>
+        <title>Sys_popup,bsd_allcalls</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

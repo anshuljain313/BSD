@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Comments" section_id="6fb9369b0f5b0300beb385ace1050e8d" sys_domain="global" table="x_14308_bsd_busi_bsd_business_support_desk_table" version="3" view="bsd_unassigned">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_subject</element>
+            <position>0</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 04:36:24</sys_created_on>
+            <sys_id>9bce173d0fe70300beb385ace1050ece</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Comments" display_value="Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="6647f21b0f5b0300beb385ace1050eff">6fb9369b0f5b0300beb385ace1050e8d</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 04:36:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>1</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 04:36:24</sys_created_on>
+            <sys_id>1fce173d0fe70300beb385ace1050ece</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Comments" display_value="Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="6647f21b0f5b0300beb385ace1050eff">6fb9369b0f5b0300beb385ace1050e8d</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 04:36:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Comments</caption>
+            <header>false</header>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-02 07:29:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6fb9369b0f5b0300beb385ace1050e8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Comments</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+            <sys_update_name>sys_ui_section_6fb9369b0f5b0300beb385ace1050e8d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-02 07:29:41</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Bsd_unassigned" name="bsd_unassigned">6647f21b0f5b0300beb385ace1050eff</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

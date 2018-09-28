@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_type</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>BSD - On Change Third Party Type</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+
+	
+
+var typ = g_form.getValue('u_type');
+	var vendorcount = g_form.getValue('u_passed_call_vendor');
+	var inccount = g_form.getValue('u_passed_call_count');
+	var states = g_form.getValue('state');
+	var f1 = g_form.getValue('u_flag11');
+	var vendorref = g_form.getValue('u_vendor_reference_number');
+	var vendor = g_form.getValue('u_vendor');
+	var objView = document.getElementById('sysparm_view');
+	var strView = objView.getAttribute('value');
+	
+//	alert("f1" + f1);
+	if(typ == '' && strView != 'portal'){
+		
+		g_form.setVisible('u_previous_vendor_reference_number' , false);
+		g_form.setVisible('u_vendor_reference_number' , false);
+		g_form.setVisible('u_ics_call_reference' , false);
+		g_form.setVisible('u_business_service' , false);
+		g_form.setVisible('u_previous_ics_call_reference' , false);
+		g_form.setVisible('u_vendor' , false);
+		
+	}
+	
+
+		
+	
+	if(typ == 'Incident'  &&vendorcount == 0 && inccount == '0' && strView != 'portal')
+		{
+		
+g_form.setVisible('u_business_service' , true);		
+	g_form.setVisible('u_vendor' , true);
+		
+	g_form.setVisible('u_ics_call_reference' , true);		
+			g_form.setVisible('u_previous_ics_call_reference' , false);
+			g_form.setValue('u_vendor' , '035eba18db7e620035463b4ffe96191b' , 'InfoSys Ltd');
+			//g_form.setReadOnly('u_vendor');
+			g_form.setVisible('u_vendor_reference_number' , false);	
+	}
+	
+	
+		if(typ == 'Incident'  && vendorcount == 0 && inccount == '1' && strView != 'portal')
+		{
+		g_form.setVisible('u_business_service' , true);		
+	g_form.setVisible('u_vendor' , true);
+			g_form.setValue('u_vendor' , '035eba18db7e620035463b4ffe96191b' , 'InfoSys Ltd');
+			g_form.setReadOnly('u_vendor', 'true');
+			
+	g_form.setVisible('u_ics_call_reference' , true);
+
+
+			g_form.setVisible('u_previous_ics_call_reference' , false);
+				g_form.setVisible('u_previous_vendor_reference_number' , false);
+	g_form.setVisible('u_vendor_reference_number' , false);		
+	}
+	
+	
+		if(typ == 'Incident'  && vendorcount == 0 && inccount == '2' && strView != 'portal')
+		{
+		g_form.setVisible('u_business_service' , true);		
+	g_form.setVisible('u_vendor' , true);
+				g_form.setValue('u_vendor' , '035eba18db7e620035463b4ffe96191b' , 'InfoSys Ltd');
+			g_form.setReadOnly('u_vendor' , 'true');
+	g_form.setVisible('u_ics_call_reference' , true);
+			g_form.setVisible('u_previous_ics_call_reference' , true);
+				g_form.setVisible('u_previous_vendor_reference_number' , false);
+	g_form.setVisible('u_vendor_reference_number' , false);	
+			
+	}
+	
+
+	
+if(typ == 'Incident'  &&vendorcount == 1 && inccount == '0' && strView != 'portal')
+		{
+			
+			
+			var vendorref1 = g_form.getValue('u_vendor_reference_number');
+		
+			g_form.setValue('u_previous_ics_call_reference' ,vendorref1 );
+		g_form.setValue('u_vendor' , '035eba18db7e620035463b4ffe96191b' , 'InfoSys Ltd');
+			
+
+			g_form.setVisible('u_previous_ics_call_reference' , true);
+			
+		//	g_form.setReadOnly('u_previous_ics_call_reference' , true);
+	
+	
+			
+g_form.setVisible('u_business_service' , true);		
+	g_form.setVisible('u_vendor' , true);
+			g_form.setReadOnly('u_vendor' , true);
+			
+	g_form.setVisible('u_ics_call_reference' , true);	
+		g_form.setVisible('u_previous_vendor_reference_number' , false);
+	g_form.setVisible('u_vendor_reference_number' , false);			
+					
+		
+	}
+	
+	if(typ == 'Incident'  &&vendorcount == 1 && inccount == '1' && strView != 'portal')
+		{
+			
+			g_form.setVisible('u_business_service' , true);		
+	g_form.setVisible('u_vendor' , true);
+			g_form.setReadOnly('u_vendor' , true);
+			g_form.setVisible('u_vendor_reference_number' , false);
+			g_form.setReadOnly('u_vendor_reference_number' , true);
+		g_form.setVisible('u_ics_call_reference' , true);	
+			g_form.setVisible('u_previous_ics_call_reference' , false);
+		}
+	
+	
+	//working - start
+		if(typ == '3rd Party Vendors'  &&vendorcount == 0 && inccount == '0' && strView != 'portal')
+		{
+		
+g_form.setVisible('u_business_service' , true);		
+	g_form.setVisible('u_vendor' , true);
+			g_form.setValue('u_vendor' ,'');
+			g_form.setMandatory('u_vendor' ,'true');
+			g_form.setReadOnly('u_vendor' , 'false');
+	g_form.setVisible('u_vendor_reference_number' , true);	
+			g_form.setVisible('u_ics_call_reference' , false);	
+		
+	}
+
+		if(typ == '3rd Party Vendors'  && vendorcount == 1 && inccount == '0'&& strView != 'portal' )
+		{
+		
+			g_form.setVisible('u_business_service' , 'true');		
+	g_form.setVisible('u_vendor' , 'true');
+		g_form.setMandatory('u_vendor' ,'true');	
+	//g_form.setReadOnly('u_vendor' , 'false');
+			g_form.setVisible('u_ics_call_reference' , false);
+		g_form.setVisible('u_previous_ics_call_reference' , false);
+
+	g_form.setVisible('u_vendor_reference_number' , true);	
+//g_form.setReadOnly('u_vendor_reference_number' , false);		
+		g_form.setVisible('u_previous_vendor_reference_number' , false);
+		
+	}
+
+		if(typ == '3rd Party Vendors'  && vendorcount == 1 && inccount == '0' && f1=='false' && vendorref!=''&& strView != 'portal' )
+		{
+		//	alert("hiiiii");
+g_form.setReadOnly('u_vendor' , 'true');
+			g_form.setReadOnly('u_vendor_reference_number' , true);
+		}
+	
+		if(typ == '3rd Party Vendors'  && vendorcount == 1 && inccount == '0' && f1=='true'&& strView != 'portal' )
+		{
+		var v12 = g_form.getValue('u_vendor_reference_number');
+	//	g_form.setValue('u_vendor_reference_number' , '');
+			g_form.setVisible('u_previous_vendor_reference_number' , true);
+			g_form.setValue('u_previous_vendor_reference_number' , v12);
+			g_form.setValue('u_vendor_reference_number' , '');
+		}
+	
+	
+		if(typ == '3rd Party Vendors'  && vendorcount == 2 && inccount == '0'&& strView != 'portal')
+		{
+		
+			g_form.setVisible('u_business_service' , 'true');		
+	g_form.setVisible('u_vendor' , 'true');
+			g_form.setMandatory('u_vendor' ,'true');
+			g_form.setVisible('u_ics_call_reference' , false);
+		g_form.setVisible('u_previous_ics_call_reference' , false);
+
+	g_form.setVisible('u_vendor_reference_number' , true);	
+		//	g_form.setVisible('u_previous_vendor_reference_number' , true);
+			g_form.setReadOnly('u_previous_vendor_reference_number' , true);
+			
+
+}
+//working end
+	
+			if(typ == '3rd Party Vendors'  && vendorcount == 0 && inccount == '1' && strView != 'portal')
+		{
+			
+			var v11 = g_form.getDisplayBox('u_ics_call_reference').value;
+
+				g_form.setVisible('u_business_service' , true);		
+	g_form.setVisible('u_vendor' , true);
+			g_form.setMandatory('u_vendor' ,'true');
+			g_form.setValue('u_vendor' , '');
+			g_form.setReadOnly('u_vendor' , false);
+			g_form.setVisible('u_previous_ics_call_reference' , false);
+			g_form.setVisible('u_vendor_reference_number' , true);	
+			g_form.setVisible('u_ics_call_reference' , false);
+		//	g_form.setVisible('u_previous_vendor_reference_number' , true);
+			g_form.setValue('u_previous_vendor_reference_number',v11 );
+		}
+	
+if(typ == '3rd Party Vendors'  && vendorcount == 1 && inccount == '1'&& strView != 'portal' )
+		{
+			
+			var v112 = g_form.getDisplayBox('u_ics_call_reference').value;
+
+				g_form.setVisible('u_business_service' , true);		
+	g_form.setVisible('u_vendor' , true);
+			g_form.setMandatory('u_vendor' ,'true');
+		//	g_form.setReadOnly('u_vendor' , true);
+			g_form.setVisible('u_previous_ics_call_reference' , false);
+			g_form.setVisible('u_vendor_reference_number' , true);	
+		//	g_form.setReadOnly('u_vendor_reference_number' , true);	
+			g_form.setVisible('u_ics_call_reference' , false);
+			g_form.setVisible('u_previous_vendor_reference_number' , true);
+			g_form.setValue('u_previous_vendor_reference_number',v112 );
+		}
+	
+	if(typ == '3rd Party Vendors'  && vendorcount == 1 && inccount == '1' && strView != 'portal'&& (vendorref!=''))
+		{
+	g_form.setReadOnly('u_vendor_reference_number' , true);	
+			g_form.setReadOnly('u_vendor' , true);
+		}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-02 06:55:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6441f6170f5b0300beb385ace1050e7d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BSD - On Change Third Party Type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_update_name>sys_script_client_6441f6170f5b0300beb385ace1050e7d</sys_update_name>
+        <sys_updated_by>anshuljain</sys_updated_by>
+        <sys_updated_on>2018-01-09 12:20:00</sys_updated_on>
+        <table>x_14308_bsd_busi_bsd_business_support_desk_table</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

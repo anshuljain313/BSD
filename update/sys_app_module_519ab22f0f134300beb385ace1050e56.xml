@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="BSD - Business Support Desk">02e3ca900f430300beb385ace1050ef6</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>BSD Group - Create New </mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>111</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>/ssp/com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=fbac0f2837842e00ab248d2754990e6c&amp;sysparm_link_parent=db6f46bd0ff602000231716ce1050e01&amp;sysparm_catalog=e0d08b13c3330100c8b837659bba8fb4&amp;sysparm_catalog_view=catalog_default</query>
+        <report/>
+        <roles>bsd_admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-03 02:12:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>519ab22f0f134300beb385ace1050e56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BSD Group - Create New </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_update_name>sys_app_module_519ab22f0f134300beb385ace1050e56</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-03 02:12:34</sys_updated_on>
+        <timeline_page/>
+        <title>BSD Group - Create New </title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

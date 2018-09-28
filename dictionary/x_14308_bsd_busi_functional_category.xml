@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Functional Category" max_length="40" name="x_14308_bsd_busi_functional_category" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Function" max_length="32" name="u_function1" reference="x_14308_bsd_busi_functions" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="reference"/>
+        <element label="Functional Category Name" max_length="100" name="u_name" type="string"/>
+        <index name="index">
+            <element name="u_function1"/>
+        </index>
+    </element>
+</database>

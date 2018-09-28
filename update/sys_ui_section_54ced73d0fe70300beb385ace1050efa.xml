@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="54ced73d0fe70300beb385ace1050efa" sys_domain="global" table="x_14308_bsd_busi_bsd_business_support_desk_table" version="3" view="default">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>process_flow.xml</element>
+            <position>0</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9909b77d0f2b0300beb385ace1050e0f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Process Flow">5eb5b6d70f5b0300beb385ace1050e41</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1109b77d0f2b0300beb385ace1050e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>2</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9109b77d0f2b0300beb385ace1050e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_on</element>
+            <position>3</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1509b77d0f2b0300beb385ace1050e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>4</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9509b77d0f2b0300beb385ace1050e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1909b77d0f2b0300beb385ace1050e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>6</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9909b77d0f2b0300beb385ace1050e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>7</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1d09b77d0f2b0300beb385ace1050e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>8</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9d09b77d0f2b0300beb385ace1050e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>9</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1109b77d0f2b0300beb385ace1050e11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>10</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9109b77d0f2b0300beb385ace1050e11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>caller_id</element>
+            <position>11</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1509b77d0f2b0300beb385ace1050e11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>job_title</element>
+            <position>12</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9509b77d0f2b0300beb385ace1050e11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_country</element>
+            <position>13</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1909b77d0f2b0300beb385ace1050e11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_region</element>
+            <position>14</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9909b77d0f2b0300beb385ace1050e11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_department</element>
+            <position>15</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1d09b77d0f2b0300beb385ace1050e11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>16</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9d09b77d0f2b0300beb385ace1050e11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_affected_user</element>
+            <position>17</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1109b77d0f2b0300beb385ace1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_office_location</element>
+            <position>18</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9109b77d0f2b0300beb385ace1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_country_code</element>
+            <position>19</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1509b77d0f2b0300beb385ace1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_contact_no</element>
+            <position>20</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9509b77d0f2b0300beb385ace1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_additional_users</element>
+            <position>21</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1909b77d0f2b0300beb385ace1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>22</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9909b77d0f2b0300beb385ace1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_entity</element>
+            <position>23</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1d09b77d0f2b0300beb385ace1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_function1</element>
+            <position>24</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9d09b77d0f2b0300beb385ace1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_functional_category</element>
+            <position>25</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1109b77d0f2b0300beb385ace1050eda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_functional_subcategory</element>
+            <position>26</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9109b77d0f2b0300beb385ace1050eda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_functional_area</element>
+            <position>27</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1509b77d0f2b0300beb385ace1050eda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>28</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>9509b77d0f2b0300beb385ace1050eda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>29</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:30:57</sys_created_on>
+            <sys_id>1909b77d0f2b0300beb385ace1050eda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="30174876cb811200aa871831794c9cc4">54ced73d0fe70300beb385ace1050efa</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:30:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 04:36:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54ced73d0fe70300beb385ace1050efa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_14308_bsd_busi_bsd_business_support_desk_table</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+            <sys_update_name>sys_ui_section_54ced73d0fe70300beb385ace1050efa</sys_update_name>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 04:36:11</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default" name="default">30174876cb811200aa871831794c9cc4</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

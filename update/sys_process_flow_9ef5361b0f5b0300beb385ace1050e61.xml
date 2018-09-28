@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_14308_bsd_busi_bsd_business_support_desk_table">state=105^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="105"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Passed</label>
+        <name>Passed</name>
+        <order>40</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-02 07:13:13</sys_created_on>
+        <sys_id>9ef5361b0f5b0300beb385ace1050e61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Passed</sys_name>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_update_name>sys_process_flow_9ef5361b0f5b0300beb385ace1050e61</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-02 07:13:13</sys_updated_on>
+        <table>x_14308_bsd_busi_bsd_business_support_desk_table</table>
+    </sys_process_flow>
+</record_update>

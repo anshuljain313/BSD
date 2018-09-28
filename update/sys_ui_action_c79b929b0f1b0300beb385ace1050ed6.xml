@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>ResolveCall</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2/>
+        <comments/>
+        <condition>new bsdResolveCall().getCondition()</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Resolve Call</name>
+        <onclick>ResolveCall()</onclick>
+        <order>3500</order>
+        <script><![CDATA[function ResolveCall(){
+	//if(confirm('Are you sure you want to Resolve Call?')){
+		g_form.setReadonly('priority' , false);
+		g_form.setMandatory('priority' , true);
+		g_form.setReadonly('close_notes' , false);
+		g_form.setMandatory('close_notes' , true);
+		g_form.setReadOnly('u_process_category' , false);
+		g_form.setMandatory('u_process_category' , true);
+		g_form.setReadOnly('u_process_subcategory' , false);
+		g_form.setMandatory('u_process_subcategory' , true);
+		g_form.setReadOnly('u_process_activity' , false);
+		g_form.setMandatory('u_process_activity' , true);
+		g_form.setValue('u_subject', 'Resolve Call');
+//	g_form.setReadonly('comments' , true);
+		
+		var items = document.getElementsByTagName('button');
+		for(var i=0;i<items.length;i++)
+			{
+			if(items[i].innerHTML.indexOf('Resolve Call') > -1)
+				{  // Reopen Call is the name of the UI action(not element)
+			items[i].style.backgroundColor = "#74DF00";
+			items[i].style.color = "#FFFFFF";
+			//	}
+		}
+	}
+	gsftSubmit(null, g_form.getFormElement(), 'ResolveCall');
+	
+	/*}
+	else{
+		return false;
+	}*/
+}
+
+if(typeof window == 'undefined'){
+	PopulateAssignedTo();
+}
+//server-side function
+function PopulateAssignedTo(){
+	//gs.log("Inside resolve");
+	current.assigned_to = gs.getUserID();
+	current.u_response_flag = 'true';
+	current.u_resolver = gs.getUserID();
+	current.u_resolved_at = gs.nowDateTime();
+	current.u_resolved_by_workgroup = current.assignment_group;
+	if(current.state == '15' && current.u_type == 'Incident')
+		{
+		//gs.log("Inside reolve - incident");
+		current.u_resolution_state = '15';
+	}
+	else if(current.state == '14')
+		{
+		current.u_resolution_state = '14';
+	}
+	else
+		{
+		current.u_resolution_state = '1';
+	}
+	current.u_bsd_resolution_by = 'BSD Call'; // For BSD - Incident Resolution notification
+	current.state = '5';
+	current.update();
+	//current.state = '5';
+	current.update();
+	action.setRedirectURL(current);
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-02 05:19:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c79b929b0f1b0300beb385ace1050ed6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Resolve Call</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_update_name>sys_ui_action_c79b929b0f1b0300beb385ace1050ed6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-10 05:56:47</sys_updated_on>
+        <table>x_14308_bsd_busi_bsd_business_support_desk_table</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_ics_level" table="x_14308_bsd_busi_bsd_business_support_desk_table" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_ics_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>P1 - Critical</label>
+            <language>en</language>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <sequence>10</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-18 13:37:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b7fdf6ee0f430300beb385ace1050efb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-18 13:37:19</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_ics_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>P2 - High</label>
+            <language>en</language>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <sequence>20</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-18 13:37:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c1e76ae0f430300beb385ace1050ec9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-18 13:37:26</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_ics_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>P3 - Medium</label>
+            <language>en</language>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <sequence>30</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-18 13:37:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e71ef2ee0f430300beb385ace1050e75</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-18 13:37:39</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_ics_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>P4 - Low</label>
+            <language>en</language>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <sequence>40</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-18 13:37:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c3e76ee0f430300beb385ace1050e1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-18 13:37:58</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_ics_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>P5 - None</label>
+            <language>en</language>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <sequence>50</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-18 13:38:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>833ef6ee0f430300beb385ace1050eff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-18 13:38:10</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_ics_level</element>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-18 13:37:19</sys_created_on>
+            <sys_id>b4171546dbb02300a89088094896198e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_ics_level</sys_name>
+            <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+            <sys_update_name>sys_choice_x_14308_bsd_busi_bsd_business_support_desk_table_u_ics_level</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-18 13:37:19</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

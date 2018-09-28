@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Resolution Comments" section_id="c9952f720f030300beb385ace1050ef4" sys_domain="global" table="x_14308_bsd_busi_bsd_business_support_desk_table" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>0d8bfbbd0f2b0300beb385ace1050e42</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <text>&lt;span style= "border-top: none; background-color: #f60;color: white; font-weight: 600; font-size: 16px;    padding: 0px 2px 0px 14px"&gt;RESOLUTION DETAILS:&lt;/span&gt;</text>
+            <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>018bfbbd0f2b0300beb385ace1050e43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <text>&lt;span style= "border-top: none; background-color: #f60;color: white; font-weight: 600; font-size: 16px;    padding: 0px 2px 0px 14px"&gt;CLOSURE DETAILS:&lt;/span&gt;</text>
+            <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>0d8bfbbd0f2b0300beb385ace1050e42</element>
+            <position>0</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>c18bfbbd0f2b0300beb385ace1050e43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>458bfbbd0f2b0300beb385ace1050e43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_resolved_at</element>
+            <position>2</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>c58bfbbd0f2b0300beb385ace1050e43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>498bfbbd0f2b0300beb385ace1050e43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_resolver</element>
+            <position>4</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>c98bfbbd0f2b0300beb385ace1050e43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>4d8bfbbd0f2b0300beb385ace1050e43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>close_notes</element>
+            <position>6</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>cd8bfbbd0f2b0300beb385ace1050e43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>018bfbbd0f2b0300beb385ace1050e43</element>
+            <position>7</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>418bfbbd0f2b0300beb385ace1050e44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>8</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>c18bfbbd0f2b0300beb385ace1050e44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>closed_at</element>
+            <position>9</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>458bfbbd0f2b0300beb385ace1050e44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>10</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>c58bfbbd0f2b0300beb385ace1050e44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>closed_by</element>
+            <position>11</position>
+            <sys_created_by>anshuljain</sys_created_by>
+            <sys_created_on>2018-01-10 06:41:51</sys_created_on>
+            <sys_id>498bfbbd0f2b0300beb385ace1050e44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution Comments" display_value="Resolution Comments" name="x_14308_bsd_busi_bsd_business_support_desk_table" sys_domain="global" view="Default view">c9952f720f030300beb385ace1050ef4</sys_ui_section>
+            <sys_updated_by>anshuljain</sys_updated_by>
+            <sys_updated_on>2018-01-10 06:41:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Resolution Comments</caption>
+            <header>false</header>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-19 11:08:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c9952f720f030300beb385ace1050ef4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Resolution Comments</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+            <sys_update_name>sys_ui_section_c9952f720f030300beb385ace1050ef4</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-19 11:08:33</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_functional_category1" label="Functional Category" language="en" table="x_14308_bsd_busi_functional_subcategory">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_functional_category1</element>
+            <help/>
+            <hint/>
+            <label>Functional Category</label>
+            <language>en</language>
+            <name>x_14308_bsd_busi_functional_subcategory</name>
+            <plural>Functional Categories</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-14 12:01:25</sys_created_on>
+            <sys_id>32b102dd0f030300beb385ace1050e9a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Functional Category</sys_name>
+            <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+            <sys_update_name>sys_documentation_x_14308_bsd_busi_functional_subcategory_u_functional_category1_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-14 12:01:25</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

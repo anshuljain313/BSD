@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_14308_bsd_busi.bsdLoadRegion</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>bsdLoadRegion</name>
+        <script><![CDATA[var bsdLoadRegion = Class.create();
+bsdLoadRegion.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	loadRegion:function(){
+		
+		var usename;
+		var location;
+		var countrycode;
+		
+		
+		
+		var cc1 = this.getParameter('sysparm_cc');
+		
+		var usr = new GlideRecord('sys_user');
+		
+		
+		usr.addQuery('sys_id' , cc1);
+		usr.query();
+		if(usr.next())
+			{
+			var countrysysid = usr.location.country;
+				gs.log('country sys'+countrysysid);
+			var countryname = usr.location.country;
+			
+			var usr1 = new GlideRecord('core_country');
+			usr1.addQuery('sys_id' , countrysysid);
+			usr1.query();
+			if(usr1.next())
+				{
+				cc = usr1.iso3166_2;
+				//location = usr.u_job_title;
+				region = usr1.u_region2;
+			}
+			
+		}
+		return  cc + "," + region;
+	},
+	
+	type: 'bsdLoadRegion'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-09 11:01:31</sys_created_on>
+        <sys_id>ba0daf610f630300beb385ace1050ea4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>bsdLoadRegion</sys_name>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_update_name>sys_script_include_ba0daf610f630300beb385ace1050ea4</sys_update_name>
+        <sys_updated_by>anshuljain</sys_updated_by>
+        <sys_updated_on>2018-01-10 05:36:11</sys_updated_on>
+    </sys_script_include>
+</record_update>

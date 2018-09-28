@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Business Support Desk - Create a New Call">3edddc970f4b0300beb385ace1050e49</catalog_item>
+        <catalog_variable>IO:e702e05b0f4b0300beb385ace1050e03</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order/>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-12-21 06:04:32</sys_created_on>
+        <sys_id>a923bc670f030300beb385ace1050e80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_submitted_by</sys_name>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_a923bc670f030300beb385ace1050e80</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-12-21 06:04:32</sys_updated_on>
+        <table/>
+        <ui_policy display_value="OnLoad ReadOnly">4ef23c670f030300beb385ace1050e98</ui_policy>
+        <variable>u_submitted_by</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+</record_update>

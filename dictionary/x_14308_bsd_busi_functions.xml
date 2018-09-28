@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Functions" max_length="40" name="x_14308_bsd_busi_functions" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Description" max_length="100" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Entity" mandatory="true" max_length="32" name="u_entity1" reference="x_14308_bsd_busi_entity" reference_qual="javascript:&quot;u_entity1 =&quot;+u_functional_area.u_functional_subcategory.u_functional_category1.u_function1.u_entity1.sys_id;" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Function" mandatory="true" max_length="100" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Order" max_length="40" name="u_order" type="integer"/>
+        <index name="index">
+            <element name="u_entity1"/>
+        </index>
+    </element>
+</database>

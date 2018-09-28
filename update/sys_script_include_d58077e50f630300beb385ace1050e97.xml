@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_14308_bsd_busi.getProcessCategoryBSDForm</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>getProcessCategoryBSDForm</name>
+        <script><![CDATA[//var getProcessCategoryBSDForm = Class.create();
+//getProcessCategoryBSDForm.prototype = {
+	//  initialize: function() {
+		function getProcessCategoryBSDForm(){
+			//gs.log("Inside Process Category Script Include..");
+			var pc = '';
+			var sc2 = new GlideRecord('x_14308_bsd_busi_functional_values');
+			sc2.addQuery( 'u_entity', current.u_entity);
+			sc2.addQuery('u_function', current.u_function1);
+			sc2.addQuery('u_functional_category', current.u_functional_category);
+			sc2.addQuery('u_functional_subcategory', current.u_functional_subcategory);
+			sc2.addQuery('u_functional_area', current.u_functional_area);
+			sc2.query();
+			if (sc2.next()){
+				if(sc2.u_available_process_categories == '')
+					{
+					//gs.log("Inside if loop where PC is empty");
+					var ps = new GlideRecord('x_14308_bsd_busi_process_values');
+					ps.addQuery('u_active', true);
+					ps.addQuery('u_entity', current.u_entity);
+					ps.query();
+					//gs.log("Total filtered Process Values: " + ps.getRowCount());
+					while(ps.next()){
+						pc += (',' + ps.u_process_category);
+					}
+				}
+				else{
+					//gs.log("Inside else loop where PC has values");
+					var list = sc2.u_available_process_categories.toString();
+					var array = list.split(",");
+					for (var i=0; i < array.length; i++) {
+						//gs.log("Reference value is: " + array[i]);
+						//pc += (',' + array[i]);	
+						var ps2 = new GlideRecord('x_14308_bsd_busi_process_values');
+						ps2.addQuery('u_active', true);
+						ps2.addQuery('u_entity', current.u_entity);
+						ps2.addQuery('u_process_category', array[i]);
+						ps2.query();
+						gs.log("Total filtered Process Values2: " + ps2.getRowCount());
+						while(ps2.next()){
+							pc += (',' + ps2.u_process_category);
+						}
+						//pc = sc2.u_available_process_categories;
+					}
+				}
+			}
+			return 'sys_idIN' + pc;
+		}
+		//  },
+		
+		//    type: 'getProcessCategoryBSDForm'
+		//};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-09 11:15:53</sys_created_on>
+        <sys_id>d58077e50f630300beb385ace1050e97</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>getProcessCategoryBSDForm</sys_name>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_update_name>sys_script_include_d58077e50f630300beb385ace1050e97</sys_update_name>
+        <sys_updated_by>anshuljain</sys_updated_by>
+        <sys_updated_on>2018-01-10 05:03:35</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Functional Subcategory" max_length="40" name="x_14308_bsd_busi_functional_subcategory" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Assignment Workgroup" max_length="32" name="u_awg" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Function" max_length="32" name="u_function" reference="x_14308_bsd_busi_functions" reference_qual="javascript:&quot;u_entity1=&quot;+current.u_function.u_entity1.sys_id" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="Functional Category" max_length="32" name="u_functional_category1" reference="x_14308_bsd_busi_functional_category" type="reference"/>
+        <element label="Functional Subcategory Name" max_length="100" name="u_name" type="string"/>
+        <index name="index">
+            <element name="u_function"/>
+        </index>
+        <index name="index2">
+            <element name="u_awg"/>
+        </index>
+        <index name="index3">
+            <element name="u_functional_category1"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Functional Values" max_length="40" name="x_14308_bsd_busi_functional_values" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true,edge_encryption_enabled=true" dependent="u_entity" dependent_on_field="u_entity" label="Available Process Categories" max_length="4000" name="u_available_process_categories" reference="x_14308_bsd_busi_process_category" reference_qual="javascript:availableProcessCat()" type="glide_list" use_dependent_field="true" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="Entity" mandatory="true" max_length="32" name="u_entity" reference="x_14308_bsd_busi_entity" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_entity" dependent_on_field="u_entity" label="Function" max_length="32" name="u_function" reference="x_14308_bsd_busi_functions" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="reference" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_functional_subcategory" dependent_on_field="u_functional_subcategory" label="Functional Area" max_length="32" name="u_functional_area" reference="x_14308_bsd_busi_functional_area" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="reference" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_function" dependent_on_field="u_function" label="Functional Cat" max_length="32" name="u_functional_category" reference="x_14308_bsd_busi_functional_category" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="reference" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Functional Group" max_length="32" name="u_functional_group" reference="sys_user_group" reference_qual="u_search_codeLIKEFunctAdm^EQ" reference_qual_condition="u_search_codeLIKEFunctAdm^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_functional_category" dependent_on_field="u_functional_category" label="Functional Sub Category" max_length="32" name="u_functional_subcategory" reference="x_14308_bsd_busi_functional_subcategory" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="reference" use_dependent_field="true"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Region" mandatory="true" max_length="40" name="u_region" reference="x_14308_bsd_busi_region" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Regional?" max_length="40" name="u_regional" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="10" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="20" value="No"/>
+            </choice>
+        </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true,edge_encryption_enabled=true" label="Regions" max_length="4000" name="u_regions" type="glide_list"/>
+        <index name="index">
+            <element name="u_functional_category"/>
+        </index>
+        <index name="index2">
+            <element name="u_functional_area"/>
+        </index>
+        <index name="index3">
+            <element name="u_functional_subcategory"/>
+        </index>
+        <index name="index4">
+            <element name="u_function"/>
+        </index>
+        <index name="index5">
+            <element name="u_entity"/>
+        </index>
+        <index name="index6">
+            <element name="u_functional_group"/>
+        </index>
+        <index name="index7">
+            <element name="u_region"/>
+        </index>
+    </element>
+</database>

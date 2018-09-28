@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Process Category" max_length="40" name="x_14308_bsd_busi_process_category" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Description" max_length="1000" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Entity" max_length="32" name="u_entity" reference="x_14308_bsd_busi_entity" type="reference"/>
+        <element label="Process Category Name" max_length="100" name="u_name" type="string"/>
+        <index name="index">
+            <element name="u_entity"/>
+        </index>
+    </element>
+</database>

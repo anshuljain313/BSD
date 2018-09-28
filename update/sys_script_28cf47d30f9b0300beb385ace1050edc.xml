@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_14308_bsd_busi_bsd_business_support_desk_table</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>BSD Events</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[//BSD - When record is registered ********** pls ignore UAT test - 01 
+if (current.operation() == 'insert') {
+   gs.eventQueue("bsd.inserted", current, gs.getUserID(), gs.getUserName());
+}
+
+if (!current.assignment_group.nil() && current.assigned_to.nil() && current.u_reassigned_administrator_count == 0 && current.operation() != 'insert') {
+  gs.eventQueue("bsd.assigned.to.group", current, current.assignment_group.getDisplayValue() , previous.assignment_group.getDisplayValue());
+}
+
+//BSD Call Logged - OnBehalf & Sub byUsers & BSD Call Logged - Assign Func Specialist **** pls ignore UAT test - 02 & 03
+if((current.assignment_group.changes()) && (current.assignment_group =='71c9377edb39ea40e8acb04ffe961975') && current.state == '14' ){
+gs.eventQueue("bsd.assigned.to.spec", current, current.assignment_group.getDisplayValue() , previous.assignment_group.getDisplayValue());
+}
+
+if(current.u_reassigned_specialist_count.changes() && current.u_reassigned_specialist_count != 0){
+	gs.log("inside bsd events");
+gs.eventQueue("bsd.reassigned.to.spec", current, current.assigned_to.getDisplayValue() , gs.getUserDisplayName());
+}
+
+if(current.u_reassigned_administrator_count.changes() && current.u_reassigned_administrator_count != 0){
+	gs.log("xyzz" + previous.u_reassigned_administrator_count + "abc" + current.u_reassigned_administrator_count );
+gs.eventQueue("bsd.reassigned.to.admin", current, previous.assigned_to.getDisplayValue() , current.assignment_group.getDisplayValue());
+}
+
+if(current.comments.changes()&&!current.u_reopened_ticket_count.changes()&&current.state != '7' && current.assigned_to != gs.getUserID() && (current.caller_id == gs.getUserID() || current.u_affected_user == gs.getUserID() || current.u_additional_users.indexOf(gs.getUserID()) > -1))
+{
+	
+	gs.eventQueue("bsd.notify.comment.from.requester", current);
+	//current.u_assign_to_flag = false; flag no more required.
+}
+
+
+/*if(current.u_type.changesTo('3rd Party Vendors') && !current.u_vendor.nil()){
+	gs.log("inside bsd events for 3rd Party Vendor");
+gs.eventQueue("bsd.vendor", current);
+}*/
+
+
+
+
+
+
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-02 09:06:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>28cf47d30f9b0300beb385ace1050edc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BSD Events</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_update_name>sys_script_28cf47d30f9b0300beb385ace1050edc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-02 09:13:46</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=28cf47d30f9b0300beb385ace1050edc"/>
+</record_update>

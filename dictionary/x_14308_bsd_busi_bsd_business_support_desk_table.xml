@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="BSD - Business Support Desk" max_length="40" name="x_14308_bsd_busi_bsd_business_support_desk_table" type="collection">
+        <element attributes="ref_ac_columns_search=true,ref_contributions=add_edit_user;user_show_incidents,ref_ac_columns=company;u_search_code;u_global_link_id,ref_auto_completer=AJAXTableCompleter,edge_encryption_enabled=true" label="Submitted By" max_length="32" name="caller_id" read_only="true" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="ICS Level Description" max_length="4000" name="ics_level_description" type="string"/>
+        <element label="ICS Resolve" max_length="100" name="ics_resolve" type="string"/>
+        <element label="Job Title" max_length="32" name="job_title" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="3rd Party" max_length="32" name="u_3rd_party" reference="sys_user_group" type="reference">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Action Type" max_length="40" name="u_action_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Functional Admin" sequence="10" value="10"/>
+                <element inactive_on_update="false" label="Functional Specialist" sequence="20" value="20"/>
+            </choice>
+        </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true,edge_encryption_enabled=true" label="Additional Users" max_length="4000" name="u_additional_users" reference="sys_user" type="glide_list"/>
+        <element attributes="ref_ac_columns_search=true,ref_contributions=add_edit_user;user_show_incidents,ref_ac_columns=company;u_search_code;u_global_link_id,ref_auto_completer=AJAXTableCompleter,edge_encryption_enabled=true" default="javascript: gs.getUserID();" label="On Behalf Of" max_length="32" name="u_affected_user" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="False" label="assigned_to visibility" max_length="40" name="u_assigned_to_visibility" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="assigned_to_visible" max_length="40" name="u_assigned_to_visible" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="10" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="20" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Req Info Flag" max_length="40" name="u_assign_to_flag" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="BSD Actions" max_length="40" name="u_bsd_actions" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Assign to Me" sequence="10" value="Assign to Me"/>
+                <element inactive="true" inactive_on_update="true" label="Assign to Specialist" sequence="20" value="Assign to Specialist"/>
+                <element inactive_on_update="false" label="Pass to 3rd Party" sequence="30" value="Pass to 3rd Party"/>
+                <element inactive_on_update="false" label="Resolve Call" sequence="40" value="Resolve Call"/>
+                <element inactive_on_update="false" label="Assign to Funct Admin" sequence="50" value="Assign to Funct Admin"/>
+                <element inactive_on_update="false" label="Assign to Specialist" sequence="60" value="Assign to Specialist"/>
+                <element inactive_on_update="false" label="Change Priority" sequence="70" value="Change Priority"/>
+                <element inactive_on_update="false" label="Change Functional Category" sequence="80" value="Change Functional Category"/>
+                <element inactive_on_update="false" label="Update End Users" sequence="90" value="Update End Users"/>
+                <element inactive_on_update="false" label="Reassign To Funct Admin" sequence="100" value="Reassign To Funct Admin"/>
+                <element inactive_on_update="false" label="Reassign To Specialist" sequence="110" value="Reassign To Specialist"/>
+                <element inactive_on_update="false" label="Reopen Call" sequence="120" value="Reopen Call"/>
+                <element inactive_on_update="false" label="Close Call" sequence="130" value="Close Call"/>
+                <element inactive_on_update="false" label="Request Information" sequence="140" value="Request Information"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="BSD Resolution By" max_length="40" name="u_bsd_resolution_by" type="string">
+            <choice>
+                <element inactive_on_update="false" label="BSD Call" sequence="10" value="BSD Call"/>
+                <element inactive_on_update="false" label="Incident" sequence="20" value="Incident"/>
+            </choice>
+        </element>
+        <element attributes="ref_ac_columns_search=true,ref_ac_order_by=sys_class_name,ref_contributions=task_show_ci_map;show_related_task_services,ref_ac_columns=sys_class_name,u_blocked=false,ref_auto_completer=AJAXTableCompleter,edge_encryption_enabled=true" label="Service" max_length="32" name="u_business_service" read_only="true" reference="cmdb_ci_service" type="reference"/>
+        <element label="Contact No" max_length="40" name="u_contact_no" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Country Name" max_length="32" name="u_country" reference="core_country" type="reference"/>
+        <element label="Country Code" max_length="32" name="u_country_code" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Current Assignee Group" max_length="40" name="u_current_assignee_group" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Functional Admin" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Functional Specialist" sequence="20" value="2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Department" max_length="32" name="u_department" read_only="true" reference="cmn_department" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Entity" max_length="32" name="u_entity" reference="x_14308_bsd_busi_entity" reference_qual="javascript:getEntity()" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="FA Group" max_length="32" name="u_fa_group" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="flag11" max_length="40" name="u_flag11" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Function" max_length="32" name="u_function1" reference="x_14308_bsd_busi_functions" reference_qual="javascript:getFunctionForm()" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="Functional Area" max_length="32" name="u_functional_area" reference="x_14308_bsd_busi_functional_area" reference_qual="javascript:GetFunctionalAreaBSDForm()" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="Functional Category" max_length="32" name="u_functional_category" reference="x_14308_bsd_busi_functional_category" reference_qual="javascript:GetFunctionalCategoryBSDForm()" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="Functional Subcategory" max_length="32" name="u_functional_subcategory" reference="x_14308_bsd_busi_functional_subcategory" reference_qual="javascript:GetFunctionalSubCategoryBSDForm()" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="Functional Values" max_length="32" name="u_functional_values" reference="x_14308_bsd_busi_functional_values" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="true" label="Assign &amp; Resolution Flag" max_length="40" name="u_func_flag" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Current ICS" max_length="32" name="u_ics_call_reference" read_only="true" reference="incident" type="reference"/>
+        <element active="false" attributes="edge_encryption_enabled=true" choice="1" label="ICS Level" max_length="40" name="u_ics_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="P1 - Critical" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="P2 - High" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="P3 - Medium" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="P4 - Low" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="P5 - None" sequence="50" value="5"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Office Location" max_length="32" name="u_office_location" reference="cmn_location" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" label="Old Priority" max_length="40" name="u_old_priority" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1 - Critical" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="2 - High" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="3 - Moderate" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="4 - Low" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="5 - None" sequence="50" value="5"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Parent" max_length="32" name="u_parent" reference="x_14308_bsd_busi_bsd_business_support_desk_table" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="Passed Times" max_length="40" name="u_passed_call_count" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Passed Call On" max_length="40" name="u_passed_call_on" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="Count passing Calls Vendor" max_length="40" name="u_passed_call_vendor" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="PassFlag" max_length="40" name="u_passflag" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Previously Assigned To" max_length="32" name="u_previously_assigned_to" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Previous Functional Specialist" max_length="32" name="u_previous_functional_specialist" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Previous ICS" max_length="32" name="u_previous_ics_call_reference" read_only="true" type="string"/>
+        <element label="Prev Vendor" max_length="40" name="u_previous_vendor_reference_number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="Priority Changed" max_length="40" name="u_priority_change_count" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Priority Set Time" max_length="40" name="u_priority_set_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Process Activity" max_length="32" name="u_process_activity" reference="x_14308_bsd_busi_process_activity" reference_qual="javascript:getProcessActivityBSDForm()" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true,tree_picker=false" label="Process Category" max_length="32" name="u_process_category" reference="x_14308_bsd_busi_process_category" reference_qual="javascript:getProcessCategoryBSDForm()" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="Functional Specialist" max_length="32" name="u_process_specialist" reference="sys_user" reference_qual="javascript:getSpecialistList()" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true,tree_picker=false" label="Process Subcategory" max_length="32" name="u_process_subcategory" reference="x_14308_bsd_busi_process_subcategory" reference_qual="javascript:getProcessSubCategoryBSDForm()" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="Process Values" max_length="32" name="u_process_values" reference="x_14308_bsd_busi_process_values" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="ReAssigned Admin" max_length="40" name="u_reassigned_administrator_count" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Reassigned Administrator On" max_length="40" name="u_reassigned_administrator_on" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="ReAssigned Spec" max_length="40" name="u_reassigned_specialist_count" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Reassigned Specialist On" max_length="40" name="u_reassigned_specialist_on" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Region" max_length="32" name="u_region" read_only="true" reference="x_14308_bsd_busi_region" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="regionflag" max_length="40" name="u_regionflag" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Reopened By" max_length="32" name="u_reopened_by" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="ReOpened Times " max_length="40" name="u_reopened_ticket_count" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Reopened Ticket On" max_length="40" name="u_reopened_ticket_on" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="ReopenFlag" max_length="40" name="u_reopen_flag" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Resolution State" max_length="40" name="u_resolution_state" read_only="true" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Assigned" value="14"/>
+                <element inactive_on_update="false" label="Passed" value="15"/>
+                <element inactive_on_update="false" label="Pending" value="-5"/>
+                <element inactive_on_update="false" label="Registered" value="1"/>
+                <element inactive_on_update="false" label="Resolved" value="5"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Resolved" max_length="40" name="u_resolved_at" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Resolved By Workgroup" max_length="32" name="u_resolved_by_workgroup" read_only="true" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Resolved On" max_length="40" name="u_resolved_on" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Resolved By" max_length="32" name="u_resolver" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Response Flag" max_length="40" name="u_response_flag" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Specialist/Action Flag" max_length="40" name="u_specialist_flag" read_only="true" type="boolean"/>
+        <element default="Progress Details" label="Comment Type" max_length="60" name="u_subject" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Submitted By (tbd)" max_length="32" name="u_submitted_by" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" max_length="40" name="u_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Incident" sequence="10" value="Incident"/>
+                <element inactive_on_update="false" label="3rd Party Vendors" sequence="20" value="3rd Party Vendors"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Updated By" max_length="32" name="u_updated_by" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor" max_length="32" name="u_vendor" reference="core_company" reference_qual="u_active=true^u_organisation_category=bsdvendor^EQ" reference_qual_condition="u_active=true^u_organisation_category=bsdvendor^EQ" type="reference"/>
+        <element label="Curr Vendor" max_length="40" name="u_vendor_reference_number" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>passparty</action_name>
+        <active>false</active>
+        <client>true</client>
+        <client_script_v2/>
+        <comments/>
+        <condition>new bsdPassToParty().getCondition()</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Pass to 3rd Party</name>
+        <onclick>PasstoParty()</onclick>
+        <order>500</order>
+        <script><![CDATA[function PasstoParty(){
+	//	if(confirm('Are you sure you want to pass ticket to 3rd Party?\n\nTHIS ACTION CANNOT BE UNDONE!\n\nPlease provide the reason in the field Comments under \'History\' tab')){
+		var pcc = g_form.getValue('u_passed_call_count');
+	var pcc1 = g_form.getValue('u_passed_call_vendor');
+	
+	if(pcc == 1 && pcc1 == 1){
+		
+		alert("Call has been passed to 3rd Party ICS for incident one time and to 3rd Party ICS for vendors one time hence cannnot be passed again.");
+		 return false; 
+		
+	}
+		
+		if(pcc >=2){
+			alert("Call has been passed to 3rd Party ICS for incident more than two times hence cannot be passed again.");
+			//return false;
+		//	g_form.removeOption('u_type', 'Incident');
+			return false;
+		}
+	
+//	var pcc1 = g_form.getValue('u_passed_call_vendor');
+	
+	if(pcc1 >=2){
+			alert("Call has been passed to 3rd Party ICS for vendors more than two times hence cannot be passed again");
+			//return false;
+		//	g_form.removeOption('u_type', '3rd Party Vendors');
+		return false;
+		}
+	
+		var sf = g_form.getValue('u_specialist_flag');
+		if(sf == 'false')
+			{
+			g_form.setValue('u_specialist_flag' , true);
+				g_form.setValue('u_flag11' , true);
+			g_form.setValue('u_subject', 'Pass to 3rd Party');
+			g_form.setMandatory('comments', true);
+			
+			g_form.setReadOnly('priority' , false);
+			g_form.setMandatory('priority' , true);
+			g_form.setReadOnly('u_process_category' , false);
+			g_form.setMandatory('u_process_category' , true);
+			g_form.setReadOnly('u_process_subcategory' , false);
+			g_form.setMandatory('u_process_subcategory' , true);
+			g_form.setReadOnly('u_process_activity' , false);
+			g_form.setMandatory('u_process_activity' , true);
+			g_form.setReadOnly('u_type',false);
+			g_form.setValue('u_type','');
+			g_form.setMandatory('u_type', true);
+		//	g_form.setValue('state','105');
+				
+			//	g_form.setReadOnly('u_vendor',false);
+			
+			var items = document.getElementsByTagName('button');
+			for(var i=0;i<items.length;i++)
+				{
+				if(items[i].innerHTML.indexOf('Pass to 3rd Party') > -1)
+					{
+					items[i].style.backgroundColor = "#74DF00";
+					items[i].style.color = "#FFFFFF";
+				}
+			}
+			
+			
+		}
+
+		gsftSubmit(null, g_form.getFormElement(), 'passparty');
+
+	}
+
+
+	if(typeof window == 'undefined'){
+		CreateIncident();
+	}
+	//server-side function
+	function CreateIncident(){
+		var type = current.u_type;
+		var pri = current.priority;
+		
+		if(type == 'Incident'){
+			
+			var info;
+			
+			var inc = new GlideRecord("incident");
+			
+			
+			inc.assignment_group = 'c47fc7260a0aa021011aa2ede2102af2'; //sid_id of IS-SDESK-WEB
+			inc.u_business_service.setDisplayValue('z-Default (PLEASE CHANGE)');
+			inc.contract = current.u_business_service.sla;
+			inc.caller_id = current.assigned_to;
+
+			inc.urgency = '2';
+			inc.impact = '1'; //impact is medium
+			inc.cmdb_ci = '9eb79870015d21ccfec44781b6246ebf';
+			inc.u_affected_user = current.caller_id;
+			//inc.short_description = "BSD: " + current.short_description;
+	inc.short_description = "autosc  " + current.number + ":" + current.short_description;
+		//	inc.description = inc.description +  "\n" + current.comments;
+			inc.u_bsd_call = current.sys_id;
+			
+
+
+	info = ("************ Call Details*************" + "\n");
+	info += ("Affected User: " + current.caller_id.getDisplayValue()+ "\n");		
+	info += ("Service: " + current.u_business_service.getDisplayValue() + "\n");
+	info += ("ICS Priority: " + current.priority.getDisplayValue() + "\n");
+	info += ("Brief Description: " + current.short_description + "\n"+ "\n");
+	info += ("Process Category: " + current.u_process_category.getDisplayValue() + "\n");
+		info += ("Process Subcategory: " + current.u_process_subcategory.getDisplayValue() + "\n");
+		info += ("Process Activity: " + current.u_process_activity.getDisplayValue() + "\n");
+	info += ("Additional Users: " + current.u_additional_users.getDisplayValue() + "\n"+ "\n");
+			
+			info += ("on Behalf User: " + current.u_affected_user.getDisplayValue()+ "\n");
+	info += ("Contact Number: " + current.u_contact_no + "\n");
+	info += ("Submitted On: " + current.opened_at +  "\n"+ "\n" );
+			
+			info += ("Further Details: " + current.description + "\n"+ "\n");
+	
+		inc.description = (info  + "BSD COMMENTS: " + current.comments.getJournalEntry(-1));
+	//	inc.description = ("BSD COMMENTS: " + current.comments.getJournalEntry(-1));
+			
+			
+			inc.subcategory = 'User Incident';
+			
+			inc.urgency = '2';
+			inc.contact_type = 'Web';
+			inc.u_classification = 'Application / Software / Operating System';
+			
+			if(current.u_business_service != ''){
+				//inc.u_business_service = current.u_business_service;
+				var gr = new GlideRecord('cmdb_ci_service');
+				gr.addQuery('sys_id',current.u_business_service);
+				gr.query();
+				if (gr.next()) {
+					inc.u_business_service = current.u_business_service;
+					//current.u_business_service.setDisplayValue(bus);
+					ewg1 = gr.support_group.u_search_code;
+					//gs.log("ewg1: " + ewg1);
+					ewg2 = gr.u_2nd_escalation_workgroup.u_search_code;
+					//gs.log("ewg2: " + ewg2);
+					ewg3 = gr.u_3rd_escalation_workgroup.u_search_code;
+					//gs.log("ewg3: " + ewg3);
+					if (ewg3.indexOf('IS-SU') == 0) {inc.assignment_group.setDisplayValue(ewg3);}
+						if (ewg2.indexOf('IS-SU') == 0) {inc.assignment_group.setDisplayValue(ewg2);}
+						if (ewg1.indexOf('IS-SU') == 0) {inc.assignment_group.setDisplayValue(ewg1);}
+					}
+			}
+			
+			//****Insert all the comments on Incident from BSD Call****
+		/*	
+			var answer2 = ' ';
+			var info = current.comments.getJournalEntry(1);
+			var na2 = info.split("\n\n");
+			for (var j = 0; j < na2.length; j++)
+				answer2 = na2[j] + "\n\n" + answer2;
+			
+			inc.comments = ("BSD COMMENTS: " + answer2);
+			*/
+			
+			//****Set Incident Priority****
+			if(pri == '1' || pri == '2' || pri =='3')
+				{
+				//gs.log("BSD Priority is 1/2/3: " + pri);
+				inc.impact = '3';
+				inc.urgency = '2';
+				inc.priority = '3';
+			}
+			else{
+				//gs.log("BSD Priority is 4/5: " + pri);
+				inc.impact = '9';
+				inc.priority = '4';
+			}
+			
+			var sysID = inc.insert();
+			
+			
+			//Update BSD Call
+			current.u_specialist_flag = false;
+			current.u_ics_call_reference = inc.sys_id;
+			current.state = '105';
+			current.u_passed_call_count +=1;
+			
+			current.u_passed_call_on = gs.nowDateTime();
+			current.assigned_to = gs.getUserID();
+			current.u_response_flag = 'true';
+			current.u_func_flag = 'false';
+			
+			
+			gs.addInfoMessage("Incident " + inc.number + " created");
+			var mySysID = current.update();
+			action.setRedirectURL(inc);
+			
+		}
+		
+		else if(type == '3rd Party Vendors'){
+			gs.eventQueue("bsd.vendor", current);
+			gs.addInfoMessage("An email has been send to vender: " + current.u_vendor.name);
+			current.state = '105';
+			current.u_specialist_flag = false;
+			current.u_passed_call_vendor +=1;
+			current.u_func_flag = 'false';
+			//current.u_passed_call_count +=1;
+			current.u_passed_call_on = gs.nowDateTime();
+			current.assigned_to = gs.getUserID();
+			current.u_response_flag = 'true';
+	action.setReturnURL(current);
+			var mySysID3 = current.update();
+			
+		}
+		
+		/*
+		else if(type == 'Request'){
+			gs.addInfoMessage("This functionality will be built in future.");
+			current.u_specialist_flag = false;
+			current.u_func_flag = 'false';
+			current.state = '15';
+			current.u_passed_call_count +=1;
+			current.u_passed_call_on = gs.nowDateTime();
+			current.assigned_to = gs.getUserID();
+			current.u_response_flag = 'true';
+			var mySysID2 = current.update();
+			action.setReturnURL(current);
+		}*/
+		
+		
+	}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-02 04:26:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e28f06170f1b0300beb385ace1050ea1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Pass to 3rd Party</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+        <sys_update_name>sys_ui_action_e28f06170f1b0300beb385ace1050ea1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-10 05:53:34</sys_updated_on>
+        <table>x_14308_bsd_busi_bsd_business_support_desk_table</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

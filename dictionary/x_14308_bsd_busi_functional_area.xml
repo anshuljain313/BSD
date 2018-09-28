@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Functional Area" max_length="40" name="x_14308_bsd_busi_functional_area" type="collection">
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true,edge_encryption_enabled=true" label="Available Process Categories" max_length="4000" name="available_process_categories" reference="x_14308_bsd_busi_process_category" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Functional Subcategory" max_length="32" name="u_functional_subcategory" reference="x_14308_bsd_busi_functional_subcategory" type="reference"/>
+        <element label="Functional Area Name" max_length="100" name="u_name" type="string"/>
+        <index name="index">
+            <element name="u_functional_subcategory"/>
+        </index>
+    </element>
+</database>

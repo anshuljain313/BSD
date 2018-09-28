@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_assigned_to_visible" label="assigned_to_visible" language="en" table="x_14308_bsd_busi_bsd_business_support_desk_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_assigned_to_visible</element>
+            <help/>
+            <hint/>
+            <label>assigned_to_visible</label>
+            <language>en</language>
+            <name>x_14308_bsd_busi_bsd_business_support_desk_table</name>
+            <plural>assigned_to_visibles</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-18 10:07:57</sys_created_on>
+            <sys_id>b71e4a6a0f030300beb385ace1050ee7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>assigned_to_visible</sys_name>
+            <sys_package display_value="BSD - Business Support Desk" source="x_14308_bsd_busi">cae302180f030300beb385ace1050e55</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BSD - Business Support Desk">cae302180f030300beb385ace1050e55</sys_scope>
+            <sys_update_name>sys_documentation_x_14308_bsd_busi_bsd_business_support_desk_table_u_assigned_to_visible_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-18 10:07:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
